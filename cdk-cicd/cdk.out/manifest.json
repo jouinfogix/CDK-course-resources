@@ -1,0 +1,155 @@
+{
+  "version": "35.0.0",
+  "artifacts": {
+    "CdkCicdStack.assets": {
+      "type": "cdk:asset-manifest",
+      "properties": {
+        "file": "CdkCicdStack.assets.json",
+        "requiresBootstrapStackVersion": 6,
+        "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version"
+      }
+    },
+    "CdkCicdStack": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://unknown-account/unknown-region",
+      "properties": {
+        "templateFile": "CdkCicdStack.template.json",
+        "terminationProtection": false,
+        "validateOnSynth": false,
+        "assumeRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-deploy-role-${AWS::AccountId}-${AWS::Region}",
+        "cloudFormationExecutionRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-cfn-exec-role-${AWS::AccountId}-${AWS::Region}",
+        "stackTemplateAssetObjectUrl": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/c5df5f71d8589fe124a3aac034fe8379318c54a01e70b65ac81b6064d997c516.json",
+        "requiresBootstrapStackVersion": 6,
+        "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version",
+        "additionalDependencies": [
+          "CdkCicdStack.assets"
+        ],
+        "lookupRole": {
+          "arn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-lookup-role-${AWS::AccountId}-${AWS::Region}",
+          "requiresBootstrapStackVersion": 8,
+          "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version"
+        }
+      },
+      "dependencies": [
+        "CdkCicdStack.assets"
+      ],
+      "metadata": {
+        "/CdkCicdStack/AwesomePipeline/Pipeline/ArtifactsBucket/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AwesomePipelineArtifactsBucket3EE45165"
+          }
+        ],
+        "/CdkCicdStack/AwesomePipeline/Pipeline/ArtifactsBucket/Policy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AwesomePipelineArtifactsBucketPolicy276A13A5"
+          }
+        ],
+        "/CdkCicdStack/AwesomePipeline/Pipeline/Role/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AwesomePipelineRole9653F6D2"
+          }
+        ],
+        "/CdkCicdStack/AwesomePipeline/Pipeline/Role/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AwesomePipelineRoleDefaultPolicy4DDB7187"
+          }
+        ],
+        "/CdkCicdStack/AwesomePipeline/Pipeline/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AwesomePipeline55957A23"
+          }
+        ],
+        "/CdkCicdStack/AwesomePipeline/Pipeline/Source/jouinfogix_CDK-course-resources/WebhookResource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AwesomePipelineSourcejouinfogixCDKcourseresourcesWebhookResource3BE3B6E8"
+          }
+        ],
+        "/CdkCicdStack/AwesomePipeline/Pipeline/Build/Synth/CdkBuildProject/Role/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AwesomePipelineBuildSynthCdkBuildProjectRole6F0B7551"
+          }
+        ],
+        "/CdkCicdStack/AwesomePipeline/Pipeline/Build/Synth/CdkBuildProject/Role/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AwesomePipelineBuildSynthCdkBuildProjectRoleDefaultPolicy2C87E618"
+          }
+        ],
+        "/CdkCicdStack/AwesomePipeline/Pipeline/Build/Synth/CdkBuildProject/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AwesomePipelineBuildSynthCdkBuildProjectFB497DB7"
+          }
+        ],
+        "/CdkCicdStack/AwesomePipeline/CodeBuildActionRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AwesomePipelineCodeBuildActionRoleD69D1C39"
+          }
+        ],
+        "/CdkCicdStack/AwesomePipeline/CodeBuildActionRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AwesomePipelineCodeBuildActionRoleDefaultPolicyF690EB65"
+          }
+        ],
+        "/CdkCicdStack/AwesomePipeline/UpdatePipeline/SelfMutation/Role/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AwesomePipelineUpdatePipelineSelfMutationRole570FD93A"
+          }
+        ],
+        "/CdkCicdStack/AwesomePipeline/UpdatePipeline/SelfMutation/Role/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AwesomePipelineUpdatePipelineSelfMutationRoleDefaultPolicy25E02245"
+          }
+        ],
+        "/CdkCicdStack/AwesomePipeline/UpdatePipeline/SelfMutation/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AwesomePipelineUpdatePipelineSelfMutationF019C13B"
+          }
+        ],
+        "/CdkCicdStack/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata"
+          }
+        ],
+        "/CdkCicdStack/CDKMetadata/Condition": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadataAvailable"
+          }
+        ],
+        "/CdkCicdStack/BootstrapVersion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BootstrapVersion"
+          }
+        ],
+        "/CdkCicdStack/CheckBootstrapVersion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CheckBootstrapVersion"
+          }
+        ]
+      },
+      "displayName": "CdkCicdStack"
+    },
+    "Tree": {
+      "type": "cdk:tree",
+      "properties": {
+        "file": "tree.json"
+      }
+    }
+  }
+}
