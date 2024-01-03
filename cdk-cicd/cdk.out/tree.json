@@ -283,7 +283,7 @@
                                 "configuration": {
                                   "Owner": "jouinfogix",
                                   "Repo": "CDK-course-resources",
-                                  "Branch": "master",
+                                  "Branch": "cicd-practice",
                                   "OAuthToken": "{{resolve:secretsmanager:github-token:SecretString:::}}",
                                   "PollForSourceChanges": false
                                 },
