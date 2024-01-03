@@ -1,6 +1,13 @@
 {
   "version": "35.0.0",
   "artifacts": {
+    "assembly-CdkCicdStack-PipelineTestStage": {
+      "type": "cdk:cloud-assembly",
+      "properties": {
+        "directoryName": "assembly-CdkCicdStack-PipelineTestStage",
+        "displayName": "CdkCicdStack/PipelineTestStage"
+      }
+    },
     "CdkCicdStack.assets": {
       "type": "cdk:asset-manifest",
       "properties": {
@@ -18,7 +25,7 @@
         "validateOnSynth": false,
         "assumeRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-deploy-role-${AWS::AccountId}-${AWS::Region}",
         "cloudFormationExecutionRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-cfn-exec-role-${AWS::AccountId}-${AWS::Region}",
-        "stackTemplateAssetObjectUrl": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/17cfe62e8b55e9a6cf4b7b0474146546b96dcd093c5c44e6a32a0df27cccc6d9.json",
+        "stackTemplateAssetObjectUrl": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/1983923a30c93b2ca2d4eb6f21feb8ffd971b09982f076ecebe8fff2c8ecf3b6.json",
         "requiresBootstrapStackVersion": 6,
         "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version",
         "additionalDependencies": [
@@ -116,6 +123,24 @@
           {
             "type": "aws:cdk:logicalId",
             "data": "AwesomePipelineUpdatePipelineSelfMutationF019C13B"
+          }
+        ],
+        "/CdkCicdStack/AwesomePipeline/Assets/FileRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AwesomePipelineAssetsFileRoleA7215557"
+          }
+        ],
+        "/CdkCicdStack/AwesomePipeline/Assets/FileRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AwesomePipelineAssetsFileRoleDefaultPolicy10A34887"
+          }
+        ],
+        "/CdkCicdStack/AwesomePipeline/Assets/FileAsset1/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AwesomePipelineAssetsFileAsset19CC2A58B"
           }
         ],
         "/CdkCicdStack/CDKMetadata/Default": [
