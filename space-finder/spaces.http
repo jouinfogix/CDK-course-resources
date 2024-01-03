@@ -1,0 +1,34 @@
+
+@url = https://4eq3h4sba0.execute-api.us-east-1.amazonaws.com/prod/
+@token = eyJraWQiOiJmSzJEZlhIcExLd29uVnlrTHZBbkMwVlwvZXE2ck9YZWFkMDZ1VEkzVWJoZz0iLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiIzNzhiMDdlMi1lZGZhLTQxNjYtYWRhMi1mZjUzN2JiNTQ3YjgiLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAudXMtZWFzdC0xLmFtYXpvbmF3cy5jb21cL3VzLWVhc3QtMV85UWVtSXRHOUoiLCJjb2duaXRvOnVzZXJuYW1lIjoiamluZ3NvbmciLCJvcmlnaW5fanRpIjoiZWYwZTdjZDMtY2QwMC00MTA0LTg4MzEtYzZiNTkyZGM2YmRhIiwiYXVkIjoiN2U0ZHRvMWpxbWJpMWtjMm1haDZwMmJrMnMiLCJldmVudF9pZCI6IjAyN2ZlZWM3LWZiOGYtNDA2NS1hODU2LTg3NDY3ZDY5ZGI1OSIsInRva2VuX3VzZSI6ImlkIiwiYXV0aF90aW1lIjoxNzA0MDEyNjY3LCJleHAiOjE3MDQwMTYyNjcsImlhdCI6MTcwNDAxMjY2NywianRpIjoiOGUyY2I3MzItNGFjYS00NWYzLTgxNmQtZjE5YmE0NDFjYTA4IiwiZW1haWwiOiJqaW5nc29uZy5vdUBwcmVjaXNlbHkuY29tIn0.LRDrYMpfFCLRLbQyWIx0waIm8dxESkwKUMc3DXb4kFJ5VXKgj6TNRQI8vj3DuEpBlEzXLcqWoFlR-gxm_jt5KNuUQrph8ZUdpcEitTIDsGXKNm-TPyXJtz8OV42N5OJqPewbTCNm6BaxHVS_srzEqxeiq4j0c0jvoDICRh35lkzeVz3497ovAYAFStt3g97ayqVie5ttjXnMhAPWQYx7sThYr_wtJt_IsET1WTH0n3ZTbWLQoXYNfWmKf-uY6WjLSYT_UiXxp5o8yM6htTBV3RBA24MYqPAOsnlCrOWSwLhCuB7bKEKnCXNYO--bAVRGQBJhrevkGWCWep8zXy4rnw
+
+GET {{url}}}/spaces
+Authorization: {{token}}
+###
+
+POST {{url}}}/spaces
+Authorization: {{token}}
+content-type: application/json
+
+{
+    "location": "Chicago",
+    "name": "Best Location 1"
+ }
+###
+
+GET {{url}}}spaces?id=2e76fc5d-1471-48a1-8a4d-e04f2904b22b
+###
+
+PUT {{url}}}/spaces?id=2e76fc5d-1471-48a1-8a4d-e04f2904b22b
+content-type: application/json
+
+{
+    "location": "Tokyo",
+    "name": "Best location 2"
+    
+ }
+###
+
+DELETE {{url}}}/spaces?id=9712358a-1836-4bcd-9c2b-fdd7c8dbf710
+Authorization: {{token}}
+###
